@@ -10,11 +10,10 @@ if (mysqli_connect_errno($conn))
 
 $name = $_POST['name'];
 $comment = $_POST['comment'];
-$link = $_POST['link'];
 
 
-$sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
-
+$sql = $sql = "DELETE FROM guestbook WHERE name='$name'";
+$sql = "DELETE FROM guestbook WHERE Comment='$comment'";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully! CONGRATULATION!";
