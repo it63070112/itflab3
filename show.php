@@ -26,4 +26,15 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <button type="button" class="btn btn-warning">EDIT</button><button type="button" class="btn btn-danger">DELETE</button>
-    <html>
+   </tr>
+<?php
+}
+?>
+</table>
+<center><a href="form_insert.html"><input type="submit" value="Insert" class="btn btn-info"></a></center>
+<?php
+mysqli_close($conn);
+?>
+</div>
+</body>
+</html>
