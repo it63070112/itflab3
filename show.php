@@ -109,8 +109,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <tr>
       <td><center><?php echo $Result['name'];?></center></td>
       <td><center><?php echo $Result['Comment'];?></center></td>
-      <button type="button" class="btn btn-warning">EDIT</button>
-<button type="button" class="btn btn-danger">DELETE</button>
+      <button type="button" class="btn btn-warning">EDIT</button><button type="button" class="btn btn-danger">DELETE</button>
     </tr>
   <?php
   }
