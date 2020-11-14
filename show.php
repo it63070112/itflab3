@@ -31,9 +31,9 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<input type="button" a href="form delete.html" values="delete>
-<input type="button" a href="form edit.html" values="edit">
-<input type="button" a href="form insert.html" values="insert">
+<input type="button" a href="form delete.html" value="delete>
+<input type="button" a href="form edit.html" value="edit">
+<input type="button" a href="form insert.html" value="insert">
 <?php
 mysqli_close($conn);
 ?>
