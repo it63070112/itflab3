@@ -15,18 +15,15 @@
 <body>
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'pimpimchanok119.mysql.database.azure.com', 'Pimchanok119@pimpimchanok119', 'PPNuro26', 'itflab', 3306);
+mysqli_real_connect($conn, 'pps21.mysql.database.azure.com', 'pps21@pps21', '#0912314633zaza', 'itflab', 3306);
 if (mysqli_connect_errno($conn))
 {
-    die('Failed to connect to MySQL PLEASE TRY AGAIN !: '.mysqli_connect_error());
+    die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 
 <div class="container">
-    <div class="form">
-        <p class="ex1"><h1><center>꒰FORM =͟͟͞͞♡</center></h1></p>
-    </div>
   <table width="600" border="1" class="table table-dark table-striped" class="center" class="ex1">
     <tr class="info">
       <th width="200"> <div align="center">Name</div></th>
